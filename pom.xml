@@ -5,8 +5,8 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-snapshot</version>
-	
+	<version>0.0.1-SNAPSHOT</version>
+	<!--<version>1.01_New</version> -->
 	<name>maven-web-application</name>
 
 	<description>Maven Web Project for Java Project</description>
@@ -21,10 +21,9 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://192.168.55.104:9000/</sonar.host.url>
-		<sonar.login>sqa_23670d44c8b3afa9e800c40c8067e1981599c42c</sonar.login>
-		<!--<sonar.login>admin</sonar.login>
-		<sonar.password>Admin@123456</sonar.password> -->
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin@123</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -99,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8081/repository/WebAPP_Release_Nuxus/</url>
+	      <url>http://localhost:8081/repository/web_app_release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8081/repository/WebApp__Snapshot_Nexus/</url>
+	      <url>http://localhost:8081/repository/Web_app_snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
@@ -152,11 +151,6 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-			<plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>4.0.0.4121</version>
-        </plugin>
 			
 </plugins>
 	</build>
