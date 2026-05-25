@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8081/repository/web_app_release/</url>
+	      <url>http://98.94.94.98:8081/repository/web_app_release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8081/repository/Web_app_snapshot/</url>
+	      <url>http://98.94.94.98:8081/repository/Web_app_snapshort/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
