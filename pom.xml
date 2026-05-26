@@ -104,7 +104,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://100.27.218.142:8081/repository/Web_app_snapshort/</url>
+	      <url>http://100.27.218.141:8081/repository/Web_app_snapshort/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
