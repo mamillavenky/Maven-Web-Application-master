@@ -1,0 +1,19 @@
+node{
+    
+    stage('Git_clone'){
+        git branch: 'main', credentialsId: '2f7e2fe2-7010-48b5-9da5-544680af6304',
+        url: 'https://github.com/mamillavenky/Maven-Web-Application-master.git'
+    }
+    stage('build_MVN'){
+        sh "mvn clean package"
+    }
+    stage('CodeQuality_sonarQube'){
+        sh "mvn clean sonar:sonar"
+    }
+    stage('Build_AF_Nexus'){
+        sh "mvn deploy"
+    }
+    stage('deploy_tomcat'){
+        sh "docker cp /var/lib/jenkins/workspace/webapplication_PipeLiee_demo/target/maven-web-application.war tomcat:/usr/local/tomcat/webapps"
+    }
+}
