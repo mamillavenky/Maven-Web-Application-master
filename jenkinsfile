@@ -10,12 +10,10 @@ node{
     stage('CodeQuality_sonarQube'){
         sh "mvn clean sonar:sonar"
     }
-/*
     stage('Build_AF_Nexus'){
         sh "mvn deploy"
     }
     stage('deploy_tomcat'){
         sh "docker cp /var/lib/jenkins/workspace/webapplication_PipeLiee_demo/target/maven-web-application.war tomcat:/usr/local/tomcat/webapps"
     }
-*/
 }
