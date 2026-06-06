@@ -7,10 +7,10 @@ node{
     stage('build_MVN'){
         sh "mvn clean package"
     }
-/*
     stage('CodeQuality_sonarQube'){
         sh "mvn clean sonar:sonar"
     }
+/*
     stage('Build_AF_Nexus'){
         sh "mvn deploy"
     }
